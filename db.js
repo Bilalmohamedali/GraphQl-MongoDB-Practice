@@ -1,15 +1,10 @@
 import mongoose from 'mongoose'
 
 const MONGODB_URI =
-  'MONGO_DB_URI= mongodb+srv://gladion:mister13pasos@cluster0.1s9m6.mongodb.net/GraphDB'
+  'mongodb+srv://gladion:mister13pasos@cluster0.1s9m6.mongodb.net/GraphDB'
 
 mongoose
-  .connect(MONGODB_URI, {
-    userNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-  })
+  .connect(MONGODB_URI, {})
 
   .then(() => {
     console.log('Conected to MongoDB')

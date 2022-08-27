@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 import uniqueValidator from 'mongoose-unique-validator'
 
-const schema = new mongoose.schema({
+const schema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
